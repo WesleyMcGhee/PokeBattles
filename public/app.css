@@ -83,6 +83,7 @@ header {
 }
 #computer-health {
   font-size: 3rem;
+  margin-top: 100px;
   margin-left: 4vh;
 }
 #player-health {
