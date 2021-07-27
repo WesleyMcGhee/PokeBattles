@@ -62,14 +62,22 @@ const computerPoke = () => {
     })
 }
 const rollDamage = () => {
-    return Math.floor((Math.random() * 5) + 1);
+    return Math.floor((Math.random() * 10) + 1);
 }
 const attack = (attacker) => {
     if(attacker === 'player'){
-       computerHealth -= rollDamage() + 15; 
+        if (rollDamage() !== 3){
+            computerHealth -= rollDamage() + 15; 
+        }else{
+            playerHealth -= 5;
+        }
     }else {
         if(playerProtected === false){
-            playerHealth -= rollDamage() + 15;
+            if (rollDamage() !== 3){
+                playerHealth -= rollDamage() + 15;
+            }else{
+                computerHealth -= 5;
+            }
         }
     }
 }
@@ -78,6 +86,9 @@ const heal = (healer) => {
         if (playerHealLeft > 0){
             playerHealth += 20;
             playerHealLeft--;
+        }
+        if (playerHealth > 100){
+            playerHealth = 100;
         }
     }else{
         computerHealth += 20;
