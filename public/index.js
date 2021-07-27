@@ -66,10 +66,10 @@ const rollDamage = () => {
 }
 const attack = (attacker) => {
     if(attacker === 'player'){
-       computerHealth -= 15; 
+       computerHealth -= rollDamage() + 15; 
     }else {
         if(playerProtected === false){
-            playerHealth -= 15;
+            playerHealth -= rollDamage() + 15;
         }
     }
 }
