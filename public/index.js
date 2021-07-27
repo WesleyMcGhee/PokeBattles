@@ -152,6 +152,7 @@ charmChoice.addEventListener('click', () => {
     playerPoke = 'charmander';
     removePokeChoice();
     chosePoke();
+    computerPoke();
 })
 bulbChoice.addEventListener('click', () => {
     playerPoke = 'bulbasaur';
