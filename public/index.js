@@ -97,7 +97,9 @@ const heal = (healer) => {
 }
 const protect = (protecter) => {
     if (protecter === 'player'){
-        playerProtected = true;
+        if(Math.floor((Math.random) * 4) + 1 !== 2){
+            playerProtected = true;
+        }
     }else{
         computerProtected = true;
     }
