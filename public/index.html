@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
     <title>PokeBattles</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id="bannar">PokeBattle</h1>
+      <h1 id="bannar">PokeBattle</h1>
     </header>
     <h2 id="win"></h2>
     <div id="container">
-        <div id="battle-box">
-            <div id="action">
-                <div id="pikachu" class="delete">
-                    <div class="name-type-container">
-                        <h2 class="pokeSelect">Pikachu</h2>
-                        <p clss="pokeType">Electric</p>
-                    </div>
-                </div>
-                <div id="squirtle" class="delete">
-                    <div class="name-type-container">
-                        <h2 class="pokeSelect">Squirtle</h2>
-                        <p clss="pokeType">Water</p>
-                    </div>
-                </div>
-                <div id="bulbasuar" class="delete">
-                    <div class="name-type-container">
-                        <h2 class="pokeSelect">Bulbasuar</h2>
-                        <p clss="pokeType">Grass</p>
-                    </div>
-                </div>
-                <div id="charmander" class="delete">
-                    <div class="name-type-container">
-                        <h2 class="pokeSelect">Charmander</h2>
-                        <p clss="pokeType">Fire</p>
-                    </div>
-                </div>
-                <div id="charizard" class="delete">
-                    <div class="name-type-container">
-                        <h2 class="pokeSelect">Charizard</h2>
-                        <p clss="pokeType">Fire</p>
-                    </div>
-                </div>
-                <div id="mewtwo" class="delete">
-                    <div class="name-type-container">
-                        <h2 class="pokeSelect">Mew-Two</h2>
-                        <p clss="pokeType">Psychic</p>
-                    </div>
-                </div>
+      <div id="battle-box">
+        <div id="action">
+          <div id="pikachu" class="delete">
+            <div class="name-type-container">
+              <h2 class="pokeSelect">Pikachu</h2>
+              <p class="pokeType">Electric</p>
             </div>
-            <div id="button-box">
-                <button class="btn" id="attack">Attack</button>
-                <button class="btn" id="heal">Heal</button>
-                <button class="btn" id="protect">Protect</button>
+          </div>
+          <div id="squirtle" class="delete">
+            <div class="name-type-container">
+              <h2 class="pokeSelect">Squirtle</h2>
+              <p class="pokeType">Water</p>
             </div>
+          </div>
+          <div id="bulbasuar" class="delete">
+            <div class="name-type-container">
+              <h2 class="pokeSelect">Bulbasuar</h2>
+              <p class="pokeType">Grass</p>
+            </div>
+          </div>
+          <div id="charmander" class="delete">
+            <div class="name-type-container">
+              <h2 class="pokeSelect">Charmander</h2>
+              <p class="pokeType">Fire</p>
+            </div>
+          </div>
+          <div id="charizard" class="delete">
+            <div class="name-type-container">
+              <h2 class="pokeSelect">Charizard</h2>
+              <p class="pokeType">Fire</p>
+            </div>
+          </div>
+          <div id="mewtwo" class="delete">
+            <div class="name-type-container">
+              <h2 class="pokeSelect">Mew-Two</h2>
+              <p class="pokeType">Psychic</p>
+            </div>
+          </div>
         </div>
+        <div id="button-box">
+          <button class="btn" id="attack">Attack</button>
+          <button class="btn" id="heal">Heal</button>
+          <button class="btn" id="protect">Protect</button>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</body>
+  </body>
 </html>
